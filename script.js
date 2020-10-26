@@ -50,14 +50,8 @@ let score = {  // a score object that keeps track of our scores and also has a c
     }
 };
 
-function getRandomNumber(min, max) {  // pretty straight forward random number generator function it's from W3school
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
-  }
-
   let generateResponse = () => { // function declaration that essentially creates the computer's decision based on the random number from the previous function
-    let computersResponse = getRandomNumber(1, 4);
+    let computersResponse = Math.floor(Math.random() * 3) + 1;
     switch(true) { //switch statement deals with whatever randomly generated number we got and assigns 1-3 to rock-paper-scissors respectively
         case computersResponse === 1:
             computersResponse = 'rock';
