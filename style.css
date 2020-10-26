@@ -1,0 +1,17 @@
+html,
+body,
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
