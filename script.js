@@ -1,4 +1,3 @@
-
 // pseudocode below
 /* 
     create a score object that holds the player and computers score
@@ -23,7 +22,6 @@
     then return results and tally a score
     create a new function that runs a while loop to run this above function until someone's score is 3 (for best 3 out of 5)
     then break out of function
-
 */
 
 //global variables
@@ -151,14 +149,4 @@ console.log(`boom! goes the...`);
 playButton.addEventListener('click', () => {
     game();
 });
-
-
-
-
-
-
-
-
-
-
 

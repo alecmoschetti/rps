@@ -1,17 +1,43 @@
 html,
-body,
-main {
+body {
     width: 100vw;
     height: 100vh;
 }
 
+ul, 
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
 main {
+    width: 90%;
+    margin: 3em auto;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        'section'
+        'aside';
 }
 
 section {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    grid-area: 'section';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside {
+    grid-area: 'aside';
+}
+
+section,
+aside {
     text-align: center;
+}
+
+
+.hidden {
+    display: none;
 }
